@@ -8,7 +8,7 @@ import classes from './Navbar.module.css';
 import Link from 'next/link';
 
 const links = [
-  { link: '/manga-list', label: 'Manga List' },
+  { link: '/mangas', label: 'Manga List' },
   { link: '/scraping', label: 'Scraping' },
 ];
 

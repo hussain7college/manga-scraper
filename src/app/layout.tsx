@@ -9,8 +9,9 @@ import { theme } from '../theme';
 import { Navbar } from '../components/Navbar';
 
 export const metadata = {
-  title: 'Mantine Next.js template',
-  description: 'I am using Mantine with Next.js!',
+  title: 'Manga Scraper',
+  description:
+    'This is a tool for scraping manga from the internet and reading them.',
 };
 
 export default function RootLayout({ children }: { children: any }) {
@@ -18,14 +19,14 @@ export default function RootLayout({ children }: { children: any }) {
     <html lang="en" {...mantineHtmlProps}>
       <head>
         <ColorSchemeScript />
-        <link rel="shortcut icon" href="/favicon.svg" />
+        <link rel="shortcut icon" href="/favicon.webp" />
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no"
         />
       </head>
       <body>
-        <MantineProvider theme={theme}>
+        <MantineProvider theme={theme} defaultColorScheme="auto">
           <Navbar />
           {children}
         </MantineProvider>
